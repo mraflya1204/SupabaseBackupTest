@@ -12,7 +12,7 @@ jobs:
     permissions:
       contents: write
     env:
-      SUPABASE_DB_URL: "postgresql://postgres:bv4td4mensumun25!@db.mjkvqobjuwoqamrtddia.supabase.co:5432/postgres"
+      SUPABASE_DB_URL: ${{ secrets.SUPABASE_KEY }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
