@@ -1,13 +1,10 @@
-name: supabase-backup
+name: supabaseBackup
 
 on:
-  push:
-    branches: [main, dev]
-  pull_request:
-    branches: [main, dev]
-  workflow_dispatch:
+  workflow_dispatch: #enable manual trigger
   schedule:
-    - cron: "0 0 * * *" # Runs every day at midnight
+    # everyday at 00:00
+    - cron: '0 0 * * *'
 
 jobs:
   run_db_backup:
@@ -15,7 +12,7 @@ jobs:
     permissions:
       contents: write
     env:
-      SUPABASE_DB_URL: "https://mjkvqobjuwoqamrtddia.supabase.co"
+      SUPABASE_DB_URL: "postgresql://postgres:[YOUR-PASSWORD]@db.mjkvqobjuwoqamrtddia.supabase.co:5432/postgres"
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
