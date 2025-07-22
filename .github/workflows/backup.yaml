@@ -15,7 +15,7 @@ jobs:
     permissions:
       contents: write
     env:
-      SUPABASE_DB_URL: https://mjkvqobjuwoqamrtddia.supabase.co
+      SUPABASE_DB_URL: "https://mjkvqobjuwoqamrtddia.supabase.co"
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
