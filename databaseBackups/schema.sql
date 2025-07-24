@@ -77,6 +77,7 @@ CREATE TABLE IF NOT EXISTS "public"."delegates" (
     "payment_proof_url" "text",
     "social_media_proof_url" "text",
     "id_proof_url" "text",
+    "double_delegate_name" character varying(255),
     CONSTRAINT "delegates_accommodation_check" CHECK (("accommodation" = ANY (ARRAY['yes'::"text", 'no'::"text"]))),
     CONSTRAINT "delegates_type_check" CHECK (("type" = ANY (ARRAY['Local'::"text", 'International'::"text"])))
 );
@@ -114,6 +115,7 @@ CREATE TABLE IF NOT EXISTS "public"."delegation_delegates" (
     "council2_country" "text",
     "council3" "text",
     "council3_country" "text",
+    "double_delegate_name" character varying(255),
     CONSTRAINT "delegation_delegates_accommodation_check" CHECK (("accommodation" = ANY (ARRAY['yes'::"text", 'no'::"text"]))),
     CONSTRAINT "delegation_delegates_delegate_order_check1" CHECK ((("delegate_order" >= 1) AND ("delegate_order" <= 10))),
     CONSTRAINT "delegation_delegates_type_check" CHECK (("type" = ANY (ARRAY['Local'::"text", 'International'::"text"])))
