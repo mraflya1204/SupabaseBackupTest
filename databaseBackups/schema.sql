@@ -105,8 +105,6 @@ CREATE TABLE IF NOT EXISTS "public"."delegation_delegates" (
     "name" "text" NOT NULL,
     "nationality" "text" NOT NULL,
     "dob" "date" NOT NULL,
-    "type" "text" NOT NULL,
-    "accommodation" "text" NOT NULL,
     "mun_experiences" "text",
     "id_proof_url" "text" NOT NULL,
     "council1" "text",
@@ -116,9 +114,10 @@ CREATE TABLE IF NOT EXISTS "public"."delegation_delegates" (
     "council3" "text",
     "council3_country" "text",
     "double_delegate_name" character varying(255),
-    CONSTRAINT "delegation_delegates_accommodation_check" CHECK (("accommodation" = ANY (ARRAY['yes'::"text", 'no'::"text"]))),
-    CONSTRAINT "delegation_delegates_delegate_order_check1" CHECK ((("delegate_order" >= 1) AND ("delegate_order" <= 10))),
-    CONSTRAINT "delegation_delegates_type_check" CHECK (("type" = ANY (ARRAY['Local'::"text", 'International'::"text"])))
+    "delegation_name" "text",
+    "email" "text",
+    "phone" "text",
+    CONSTRAINT "delegation_delegates_delegate_order_check1" CHECK ((("delegate_order" >= 1) AND ("delegate_order" <= 10)))
 );
 
 
@@ -183,11 +182,11 @@ CREATE TABLE IF NOT EXISTS "public"."delegations" (
     "created_at" timestamp with time zone DEFAULT "now"(),
     "delegation_name" "text" NOT NULL,
     "school" "text" NOT NULL,
-    "head_delegate_name" "text" NOT NULL,
-    "head_delegate_email" "text" NOT NULL,
-    "head_delegate_phone" "text" NOT NULL,
     "payment_proof_url" "text",
-    "referal_code" "text"
+    "referal_code" "text",
+    "accommodation" "text",
+    "type" "text",
+    CONSTRAINT "delegations_accommodation_check" CHECK (("accommodation" = ANY (ARRAY['yes'::"text", 'no'::"text"])))
 );
 
 
@@ -216,7 +215,8 @@ CREATE TABLE IF NOT EXISTS "public"."observers" (
     "payment_proof_url" "text",
     "council1" "text",
     "council2" "text",
-    "council3" "text"
+    "council3" "text",
+    "accommodation" "text"
 );
 
 
@@ -261,11 +261,6 @@ ALTER TABLE ONLY "public"."delegation_delegates_old"
 
 ALTER TABLE ONLY "public"."delegation_delegates"
     ADD CONSTRAINT "delegation_delegates_pkey1" PRIMARY KEY ("id");
-
-
-
-ALTER TABLE ONLY "public"."delegations"
-    ADD CONSTRAINT "delegations_head_delegate_email_key" UNIQUE ("head_delegate_email");
 
 
 
