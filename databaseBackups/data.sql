@@ -186,18 +186,6 @@ COPY "public"."delegation_delegates" ("id", "delegation_id", "created_at", "dele
 
 
 --
--- Data for Name: delegation_delegates_old; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-COPY "public"."delegation_delegates_old" ("id", "delegation_id", "created_at", "delegate_order", "name", "email", "phone_number", "nationality", "is_international_delegate", "mun_experiences", "accommodation", "council_1", "first_country_1", "second_country_1", "council_2", "first_country_2", "second_country_2", "council_3", "first_country_3", "second_country_3", "co_delegate_name_unsc", "co_delegate_contact_unsc", "social_media_proof_url") FROM stdin;
-18	23	2025-07-22 10:12:35.722062+00	1	John Doe	test@gmail.com	62123456789	Indonesia	t												\N	\N	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/social-media-proofs/delegation-social-media-proofs/1753179153275-1-github%20pp.jpg
-19	23	2025-07-22 10:12:35.722062+00	2	Luci	test@gmail.com	628987456123	Indonesia	f										\N		\N	\N	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/social-media-proofs/delegation-social-media-proofs/1753179153275-2-github%20pp.jpg
-20	24	2025-07-22 10:20:32.130479+00	1	John Doe Lain	lain@gmail.com	62123456789	Indonesia	t	1		1	1	1	1	1	1	1	1	1	\N	\N	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/social-media-proofs/delegation-social-media-proofs/1753179628764-1-github%20pp.jpg
-21	24	2025-07-22 10:20:32.130479+00	2	Luci Lain	lain@gmail.com	628987456123	Indonesia	f	2		2	2	2	2	2	2	2	\N	2	\N	\N	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/social-media-proofs/delegation-social-media-proofs/1753179628764-2-github%20pp.jpg
-\.
-
-
---
 -- Data for Name: observers; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -213,10 +201,10 @@ COPY "public"."observers" ("id", "created_at", "name", "nationality", "mun_exper
 --
 
 COPY "storage"."buckets" ("id", "name", "owner", "created_at", "updated_at", "public", "avif_autodetection", "file_size_limit", "allowed_mime_types", "owner_id") FROM stdin;
-sumun25-payments	sumun25-payments	\N	2025-07-12 21:48:42.052951+00	2025-07-12 21:48:42.052951+00	t	f	10485760	\N	\N
-payment-proofs	payment-proofs	\N	2025-07-12 21:49:47.500207+00	2025-07-12 21:49:47.500207+00	t	f	10485760	\N	\N
-social-media-proofs	social-media-proofs	\N	2025-07-12 21:50:09.765315+00	2025-07-12 21:50:09.765315+00	t	f	10485760	\N	\N
-id-proofs	id-proofs	\N	2025-07-16 05:17:23.08897+00	2025-07-16 05:17:23.08897+00	t	f	10485760	\N	\N
+sumun25-payments	sumun25-payments	\N	2025-07-12 21:48:42.052951+00	2025-07-12 21:48:42.052951+00	t	f	3145728	\N	\N
+payment-proofs	payment-proofs	\N	2025-07-12 21:49:47.500207+00	2025-07-12 21:49:47.500207+00	t	f	3145728	\N	\N
+social-media-proofs	social-media-proofs	\N	2025-07-12 21:50:09.765315+00	2025-07-12 21:50:09.765315+00	t	f	3145728	\N	\N
+id-proofs	id-proofs	\N	2025-07-16 05:17:23.08897+00	2025-07-16 05:17:23.08897+00	t	f	3145728	\N	\N
 \.
 
 
@@ -319,13 +307,6 @@ SELECT pg_catalog.setval('"auth"."refresh_tokens_id_seq"', 1, false);
 --
 
 SELECT pg_catalog.setval('"public"."delegates_id_seq"', 6, true);
-
-
---
--- Name: delegation_delegates_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
---
-
-SELECT pg_catalog.setval('"public"."delegation_delegates_id_seq"', 21, true);
 
 
 --
