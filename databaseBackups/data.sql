@@ -168,20 +168,20 @@ COPY "public"."delegations" ("id", "created_at", "delegation_name", "school", "p
 -- Data for Name: delegation_delegates; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY "public"."delegation_delegates" ("id", "delegation_id", "created_at", "delegate_order", "name", "nationality", "dob", "mun_experiences", "id_proof_url", "council1", "council1_country", "council2", "council2_country", "council3", "council3_country", "double_delegate_name", "delegation_name", "email", "phone") FROM stdin;
-1	23	2025-07-22 13:16:49.247915+00	1	John Doe	Indonesia	1900-01-01		PLEASE_UPDATE_URL							\N	\N	\N	\N
-2	23	2025-07-22 13:16:49.247915+00	2	Luci	Indonesia	1900-01-01		PLEASE_UPDATE_URL						\N	\N	\N	\N	\N
-3	24	2025-07-22 13:16:49.247915+00	1	John Doe Lain	Indonesia	1900-01-01	1	PLEASE_UPDATE_URL	1	1	1	1	1	1	\N	\N	\N	\N
-4	24	2025-07-22 13:16:49.247915+00	2	Luci Lain	Indonesia	1900-01-01	2	PLEASE_UPDATE_URL	2	2	2	2	2	\N	\N	\N	\N	\N
-5	25	2025-07-24 01:27:55.792462+00	1	dhdfh	dfhdfh	2025-07-22	dhdhfd	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/id-proofs/delegation-id-proofs/1753320589703-1-Mask%20group.png	sfhsfh	sfhsfh	sfhsfh	sfhsfh	sfhsfh	sfhshf	\N	\N	\N	\N
-6	25	2025-07-24 01:27:55.792462+00	2	dgjdgj	dgjdg	2025-07-17	dgjdgj	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/id-proofs/delegation-id-proofs/1753320589703-2-mun-club-01-768x361.jpg	dgjdgj	dgjdg	dgjdgj	dgjdgj	dgjdgj	dgjdgj	\N	\N	\N	\N
-7	25	2025-07-24 01:27:55.792462+00	3	gjfgj	fgjfgj	2025-07-23	fgjfgj	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/id-proofs/delegation-id-proofs/1753320589703-3-mun-club-01-768x361.jpg	fgjfg	jfjgfgj	fgjfgj	fgjfgj	fgjfgj	fgjfgj	\N	\N	\N	\N
-8	25	2025-07-24 01:27:55.792462+00	4	gfjfgj	fgjfgj	2025-07-25	fgjfgj	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/id-proofs/delegation-id-proofs/1753320589703-4-Mask%20group.png	fgjfgj	fgjfgj	fgjfgj	fgjfgj	fgjfg	fgjfgj	\N	\N	\N	\N
-9	26	2025-07-24 13:02:45.916084+00	1	sfhsfh	dfhdfh	2025-07-18	adgadg	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/id-proofs/delegation-id-proofs/1753362280408-1-simon.jpg	adgadg	adgadg	adgadg	adgadg	adgadg	adgadg	\N	delegasi keren	sfhsf@gmail.com	+62 151351353124
-10	26	2025-07-24 13:02:45.916084+00	2	dfjdgj	jdgjdjdgj	2025-07-24	djfdjdfj	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/id-proofs/delegation-id-proofs/1753362280408-2-simon.jpg	dfjdfj	dfjdfj	dfjdfj	dfjdfj	dfjdfj	jdfjfd	\N	delegasi keren	yuoy@hmail.com	+62 575079124124124
-11	26	2025-07-24 13:02:45.916084+00	3	sshffh	adgadgg	2025-07-24	fjfsh	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/id-proofs/delegation-id-proofs/1753362280408-3-simon.jpg	sfhsfh	shffs	sfhshf	sfhfsh	sfhsfh	sfsfhfsh	\N	delegasi keren	sfhfshhf@mail.com	+62 113136163124124
-12	26	2025-07-24 13:02:45.916084+00	4	sfhsfhs	shsfhfsh	2025-07-23	sfhsfh	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/id-proofs/delegation-id-proofs/1753362280408-4-simon.jpg	sfhshf	sfhshf	sfhshf	sfhfsh	sfhshf	sfhfsh	\N	delegasi keren	ryiyr@gmail.com	+62 942047124124124
-13	26	2025-07-24 13:02:45.916084+00	5	sjdjdjg	adadadgadg	2025-07-24	adgadgadg	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/id-proofs/delegation-id-proofs/1753362280408-5-simon.jpg	adgagdadg	gadgaadg	adgadg	adgadg	adagadg	adgadg	\N	delegasi keren	dgjdf@gmail.com	+62 10396136124124
+COPY "public"."delegation_delegates" ("id", "delegation_id", "created_at", "delegate_order", "name", "nationality", "dob", "mun_experiences", "id_proof_url", "council1", "council1_country", "council2", "council2_country", "council3", "council3_country", "double_delegate_name", "delegation_name", "email", "phone", "social_media_proof_url") FROM stdin;
+1	23	2025-07-22 13:16:49.247915+00	1	John Doe	Indonesia	1900-01-01		PLEASE_UPDATE_URL							\N	\N	\N	\N	\N
+2	23	2025-07-22 13:16:49.247915+00	2	Luci	Indonesia	1900-01-01		PLEASE_UPDATE_URL						\N	\N	\N	\N	\N	\N
+3	24	2025-07-22 13:16:49.247915+00	1	John Doe Lain	Indonesia	1900-01-01	1	PLEASE_UPDATE_URL	1	1	1	1	1	1	\N	\N	\N	\N	\N
+4	24	2025-07-22 13:16:49.247915+00	2	Luci Lain	Indonesia	1900-01-01	2	PLEASE_UPDATE_URL	2	2	2	2	2	\N	\N	\N	\N	\N	\N
+5	25	2025-07-24 01:27:55.792462+00	1	dhdfh	dfhdfh	2025-07-22	dhdhfd	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/id-proofs/delegation-id-proofs/1753320589703-1-Mask%20group.png	sfhsfh	sfhsfh	sfhsfh	sfhsfh	sfhsfh	sfhshf	\N	\N	\N	\N	\N
+6	25	2025-07-24 01:27:55.792462+00	2	dgjdgj	dgjdg	2025-07-17	dgjdgj	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/id-proofs/delegation-id-proofs/1753320589703-2-mun-club-01-768x361.jpg	dgjdgj	dgjdg	dgjdgj	dgjdgj	dgjdgj	dgjdgj	\N	\N	\N	\N	\N
+7	25	2025-07-24 01:27:55.792462+00	3	gjfgj	fgjfgj	2025-07-23	fgjfgj	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/id-proofs/delegation-id-proofs/1753320589703-3-mun-club-01-768x361.jpg	fgjfg	jfjgfgj	fgjfgj	fgjfgj	fgjfgj	fgjfgj	\N	\N	\N	\N	\N
+8	25	2025-07-24 01:27:55.792462+00	4	gfjfgj	fgjfgj	2025-07-25	fgjfgj	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/id-proofs/delegation-id-proofs/1753320589703-4-Mask%20group.png	fgjfgj	fgjfgj	fgjfgj	fgjfgj	fgjfg	fgjfgj	\N	\N	\N	\N	\N
+9	26	2025-07-24 13:02:45.916084+00	1	sfhsfh	dfhdfh	2025-07-18	adgadg	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/id-proofs/delegation-id-proofs/1753362280408-1-simon.jpg	adgadg	adgadg	adgadg	adgadg	adgadg	adgadg	\N	delegasi keren	sfhsf@gmail.com	+62 151351353124	\N
+10	26	2025-07-24 13:02:45.916084+00	2	dfjdgj	jdgjdjdgj	2025-07-24	djfdjdfj	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/id-proofs/delegation-id-proofs/1753362280408-2-simon.jpg	dfjdfj	dfjdfj	dfjdfj	dfjdfj	dfjdfj	jdfjfd	\N	delegasi keren	yuoy@hmail.com	+62 575079124124124	\N
+11	26	2025-07-24 13:02:45.916084+00	3	sshffh	adgadgg	2025-07-24	fjfsh	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/id-proofs/delegation-id-proofs/1753362280408-3-simon.jpg	sfhsfh	shffs	sfhshf	sfhfsh	sfhsfh	sfsfhfsh	\N	delegasi keren	sfhfshhf@mail.com	+62 113136163124124	\N
+12	26	2025-07-24 13:02:45.916084+00	4	sfhsfhs	shsfhfsh	2025-07-23	sfhsfh	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/id-proofs/delegation-id-proofs/1753362280408-4-simon.jpg	sfhshf	sfhshf	sfhshf	sfhfsh	sfhshf	sfhfsh	\N	delegasi keren	ryiyr@gmail.com	+62 942047124124124	\N
+13	26	2025-07-24 13:02:45.916084+00	5	sjdjdjg	adadadgadg	2025-07-24	adgadgadg	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/id-proofs/delegation-id-proofs/1753362280408-5-simon.jpg	adgagdadg	gadgaadg	adgadg	adgadg	adagadg	adgadg	\N	delegasi keren	dgjdf@gmail.com	+62 10396136124124	\N
 \.
 
 

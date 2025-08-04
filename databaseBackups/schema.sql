@@ -117,6 +117,7 @@ CREATE TABLE IF NOT EXISTS "public"."delegation_delegates" (
     "delegation_name" "text",
     "email" "text",
     "phone" "text",
+    "social_media_proof_url" "text",
     CONSTRAINT "delegation_delegates_delegate_order_check1" CHECK ((("delegate_order" >= 1) AND ("delegate_order" <= 10)))
 );
 
