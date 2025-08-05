@@ -97,6 +97,35 @@ ALTER TABLE "public"."delegates" ALTER COLUMN "id" ADD GENERATED ALWAYS AS IDENT
 
 
 
+CREATE OR REPLACE VIEW "public"."delegates_view" AS
+ SELECT "created_at",
+    "name",
+    "school",
+    "email",
+    "phone",
+    "nationality",
+    "dob",
+    "type",
+    "accommodation",
+    "mun_experiences",
+    "council1",
+    "council1_country",
+    "council2",
+    "council2_country",
+    "council3",
+    "council3_country",
+    "payment_proof_url",
+    "social_media_proof_url",
+    "id_proof_url",
+    "double_delegate_name",
+    "referral_code"
+   FROM "public"."delegates"
+  ORDER BY "created_at";
+
+
+ALTER VIEW "public"."delegates_view" OWNER TO "postgres";
+
+
 CREATE TABLE IF NOT EXISTS "public"."delegation_delegates" (
     "id" bigint NOT NULL,
     "delegation_id" bigint NOT NULL,
@@ -152,6 +181,37 @@ CREATE TABLE IF NOT EXISTS "public"."delegations" (
 ALTER TABLE "public"."delegations" OWNER TO "postgres";
 
 
+CREATE OR REPLACE VIEW "public"."delegation_delegates_view" AS
+ SELECT "delegation_delegates"."created_at",
+    "delegations"."delegation_name",
+    "delegations"."school",
+    "delegations"."type",
+    "delegations"."accommodation",
+    "delegations"."referal_code",
+    "delegations"."payment_proof_url",
+    "delegation_delegates"."name",
+    "delegation_delegates"."email",
+    "delegation_delegates"."phone",
+    "delegation_delegates"."nationality",
+    "delegation_delegates"."dob",
+    "delegation_delegates"."mun_experiences",
+    "delegation_delegates"."council1",
+    "delegation_delegates"."council1_country",
+    "delegation_delegates"."council2",
+    "delegation_delegates"."council2_country",
+    "delegation_delegates"."council3",
+    "delegation_delegates"."council3_country",
+    "delegation_delegates"."social_media_proof_url",
+    "delegation_delegates"."id_proof_url",
+    "delegation_delegates"."double_delegate_name"
+   FROM ("public"."delegation_delegates"
+     JOIN "public"."delegations" ON (("delegation_delegates"."delegation_id" = "delegations"."id")))
+  ORDER BY "delegation_delegates"."created_at";
+
+
+ALTER VIEW "public"."delegation_delegates_view" OWNER TO "postgres";
+
+
 ALTER TABLE "public"."delegations" ALTER COLUMN "id" ADD GENERATED ALWAYS AS IDENTITY (
     SEQUENCE NAME "public"."delegations_id_seq"
     START WITH 1
@@ -191,6 +251,25 @@ ALTER TABLE "public"."observers" ALTER COLUMN "id" ADD GENERATED ALWAYS AS IDENT
     CACHE 1
 );
 
+
+
+CREATE OR REPLACE VIEW "public"."observers_view" AS
+ SELECT "created_at",
+    "name",
+    "email",
+    "phone",
+    "nationality",
+    "accommodation",
+    "mun_experiences",
+    "council1",
+    "council2",
+    "council3",
+    "payment_proof_url"
+   FROM "public"."observers"
+  ORDER BY "created_at";
+
+
+ALTER VIEW "public"."observers_view" OWNER TO "postgres";
 
 
 ALTER TABLE ONLY "public"."delegates"
@@ -446,6 +525,12 @@ GRANT ALL ON SEQUENCE "public"."delegates_id_seq" TO "service_role";
 
 
 
+GRANT ALL ON TABLE "public"."delegates_view" TO "anon";
+GRANT ALL ON TABLE "public"."delegates_view" TO "authenticated";
+GRANT ALL ON TABLE "public"."delegates_view" TO "service_role";
+
+
+
 GRANT ALL ON TABLE "public"."delegation_delegates" TO "anon";
 GRANT ALL ON TABLE "public"."delegation_delegates" TO "authenticated";
 GRANT ALL ON TABLE "public"."delegation_delegates" TO "service_role";
@@ -461,6 +546,12 @@ GRANT ALL ON SEQUENCE "public"."delegation_delegates_id_seq1" TO "service_role";
 GRANT ALL ON TABLE "public"."delegations" TO "anon";
 GRANT ALL ON TABLE "public"."delegations" TO "authenticated";
 GRANT ALL ON TABLE "public"."delegations" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."delegation_delegates_view" TO "anon";
+GRANT ALL ON TABLE "public"."delegation_delegates_view" TO "authenticated";
+GRANT ALL ON TABLE "public"."delegation_delegates_view" TO "service_role";
 
 
 
@@ -480,6 +571,12 @@ GRANT SELECT ON TABLE "public"."observers" TO "data_team";
 GRANT ALL ON SEQUENCE "public"."observers_id_seq" TO "anon";
 GRANT ALL ON SEQUENCE "public"."observers_id_seq" TO "authenticated";
 GRANT ALL ON SEQUENCE "public"."observers_id_seq" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."observers_view" TO "anon";
+GRANT ALL ON TABLE "public"."observers_view" TO "authenticated";
+GRANT ALL ON TABLE "public"."observers_view" TO "service_role";
 
 
 
