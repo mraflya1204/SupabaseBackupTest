@@ -149,6 +149,9 @@ COPY "public"."delegates" ("id", "created_at", "name", "school", "email", "phone
 4	2025-07-22 19:32:46.588695+00	tyutyuty	adstyutyu	utyutyuty@gmail.com	+62 12345678222	ytityiity	2025-07-17	Local	yes	tyityityiyti	yuyuo	tyityi	tyityi	tyity	tyityi	ytityi	tyityi	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/payment-proofs/payment-proofs/1753212878709-mun-club-01-768x361.jpg	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/social-media-proofs/social-media-proofs/1753212878709-mun-club-01-768x361.jpg	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/id-proofs/id-proofs/1753212878709-mun-club-01-768x361.jpg	\N
 5	2025-07-24 00:25:27.968055+00	adgdg	adgadg	dgdgsag@gmail.com	+62 12345678	qweqwe	2025-07-11	Local	yes	asdasd	dghdgh	dfhdfh	dfhdf	dfhdfh	dhfdfh	dfhdfh	dfhdfh	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/payment-proofs/payment-proofs/1753316841990-mun-club-01-768x361.jpg	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/social-media-proofs/social-media-proofs/1753316841990-mun-club-01-768x361.jpg	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/id-proofs/id-proofs/1753316841990-mun-club-01-768x361.jpg	dfhdfh
 6	2025-07-31 15:15:27.882912+00	aasdasd	asdasd	wow@gmail.com	+62 12345678222	asdasd	2025-07-11	Local	yes	asdasd	\N	asdasd	asdasd	asd	asd	asd	asd	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/payment-proofs/payment-proofs/1753974925929-simon.jpg	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/social-media-proofs/social-media-proofs/1753974925929-simon.jpg	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/id-proofs/id-proofs/1753974925929-simon.jpg	asdasd
+7	2025-08-05 06:33:57.223258+00	aadg	adgadg	asf@gmail.com	+62 136136136	dg	2025-08-13	Local	yes	hdh	bnbn,	UNEP	dah	UNESCO	adgad	UN Tourism	adgadg	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/payment-proofs/payment-proofs/1754375753559-simon.jpg	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/social-media-proofs/social-media-proofs/1754375753560-simon.jpg	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/id-proofs/id-proofs/1754375753560-simon.jpg	adgadg
+8	2025-08-05 06:41:06.044842+00	Samantha Lee	NUS Singapore	sam.lee@nus.edu.sg	+6581234567	Singaporean	2001-11-20	International	yes	NUS MUN 2023, THIMUN 2022	SAM123	WHO	Singapore	WTO	Germany	UNDP	Japan	https://proofs.com/sam_payment.png	https://proofs.com/sam_social.png	https://proofs.com/sam_id.png	Samantha-Lee
+9	2025-08-05 06:41:06.044842+00	Rio Aditya	Universitas Indonesia	rio.a@ui.ac.id	+628123456700	Indonesian	2002-06-08	Local	no	Indonesia MUN 2023	RIO321	UNESCO	Indonesia	UN Tourism	Vietnam	UNSC	Philippines	https://proofs.com/rio_payment.png	https://proofs.com/rio_social.png	https://proofs.com/rio_id.png	Rio-Aditya
 \.
 
 
@@ -194,6 +197,8 @@ COPY "public"."observers" ("id", "created_at", "name", "nationality", "mun_exper
 3	2025-07-22 19:34:23.219022+00	qweqwe	qweqwe	qqweqwe	qwqweqwe@gmail.com	+62 12345678222	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/payment-proofs/payment-proofs/1753212975906-mun-club-01-768x361.jpg	qweqwe	qewqwe	qweqwe	\N
 4	2025-07-22 20:16:37.447559+00	afasd	hfshsfh	sfhsfh	weh@gmail.com	+62 12345678222	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/payment-proofs/payment-proofs/1753215395491-mun-club-01-768x361.jpg	ssfhs	sfhsfh	sfhs	\N
 5	2025-08-04 08:53:44.597914+00	c	k	j	c@gmail.com	2	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/payment-proofs/payment-proofs/1754297622888-css-3.png	h	d	f	yes
+6	2025-08-05 06:41:06.07382+00	John Tan	Malaysian	THIMUN 2023	john.tan@example.com	+60123456789	https://proofs.com/john_payment.png	WHO	WTO	UNDP	yes
+7	2025-08-05 06:41:06.07382+00	Putri Lestari	Indonesian	Indonesia MUN 2022	putri.lestari@gmail.com	+628112345678	https://proofs.com/putri_payment.png	UNESCO	UN Tourism	UNSC	no
 \.
 
 
@@ -278,6 +283,9 @@ c12820c0-ca33-41ad-9e16-84836c145341	id-proofs	delegation-id-proofs/175336228040
 a988c5ec-bfb1-4395-8208-c3cae367e555	id-proofs	delegation-id-proofs/1753362280408-1-simon.jpg	\N	2025-07-24 13:02:45.827888+00	2025-07-24 13:02:45.827888+00	2025-07-24 13:02:45.827888+00	{"eTag": "\\"66cb276e22dc12c83967194fd0382d04\\"", "size": 21373, "mimetype": "image/jpeg", "cacheControl": "max-age=3600", "lastModified": "2025-07-24T13:02:46.000Z", "contentLength": 21373, "httpStatusCode": 200}	060ade8d-d1f4-48c3-a792-b2f1f8d11f75	\N	{}
 36b4753a-217a-4cf9-8f70-026bb5430e35	id-proofs	delegation-id-proofs/1753362280408-2-simon.jpg	\N	2025-07-24 13:02:45.708671+00	2025-07-24 13:02:45.708671+00	2025-07-24 13:02:45.708671+00	{"eTag": "\\"66cb276e22dc12c83967194fd0382d04\\"", "size": 21373, "mimetype": "image/jpeg", "cacheControl": "max-age=3600", "lastModified": "2025-07-24T13:02:46.000Z", "contentLength": 21373, "httpStatusCode": 200}	c2d5d109-968f-4ccb-ba5b-77fbc66399b3	\N	{}
 d4003cfb-8596-403d-bea4-8368e7c3463f	id-proofs	delegation-id-proofs/1753362280408-3-simon.jpg	\N	2025-07-24 13:02:45.756726+00	2025-07-24 13:02:45.756726+00	2025-07-24 13:02:45.756726+00	{"eTag": "\\"66cb276e22dc12c83967194fd0382d04\\"", "size": 21373, "mimetype": "image/jpeg", "cacheControl": "max-age=3600", "lastModified": "2025-07-24T13:02:46.000Z", "contentLength": 21373, "httpStatusCode": 200}	9b8103aa-5b86-4973-967e-eb775675b6f9	\N	{}
+6af56ecd-ac22-410a-a667-82e9e4ce80af	id-proofs	id-proofs/1754375753560-simon.jpg	\N	2025-08-05 06:33:56.750424+00	2025-08-05 06:33:56.750424+00	2025-08-05 06:33:56.750424+00	{"eTag": "\\"66cb276e22dc12c83967194fd0382d04\\"", "size": 21373, "mimetype": "image/jpeg", "cacheControl": "max-age=3600", "lastModified": "2025-08-05T06:33:57.000Z", "contentLength": 21373, "httpStatusCode": 200}	e2653ad8-24e5-4894-adef-f6a1862b7768	\N	{}
+523ff2fd-60ab-4b0b-befd-5d75db153222	payment-proofs	payment-proofs/1754375753559-simon.jpg	\N	2025-08-05 06:33:56.749959+00	2025-08-05 06:33:56.749959+00	2025-08-05 06:33:56.749959+00	{"eTag": "\\"66cb276e22dc12c83967194fd0382d04\\"", "size": 21373, "mimetype": "image/jpeg", "cacheControl": "max-age=3600", "lastModified": "2025-08-05T06:33:57.000Z", "contentLength": 21373, "httpStatusCode": 200}	9bdd9fbe-94e0-4038-aab6-e6ad37691986	\N	{}
+c6973b20-063f-4f3c-a30f-df390632e763	social-media-proofs	social-media-proofs/1754375753560-simon.jpg	\N	2025-08-05 06:33:56.770083+00	2025-08-05 06:33:56.770083+00	2025-08-05 06:33:56.770083+00	{"eTag": "\\"66cb276e22dc12c83967194fd0382d04\\"", "size": 21373, "mimetype": "image/jpeg", "cacheControl": "max-age=3600", "lastModified": "2025-08-05T06:33:57.000Z", "contentLength": 21373, "httpStatusCode": 200}	ff307dc2-3b57-4f82-b7ab-3d568639390d	\N	{}
 \.
 
 
@@ -308,14 +316,14 @@ SELECT pg_catalog.setval('"auth"."refresh_tokens_id_seq"', 1, false);
 -- Name: delegates_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"public"."delegates_id_seq"', 6, true);
+SELECT pg_catalog.setval('"public"."delegates_id_seq"', 9, true);
 
 
 --
 -- Name: delegation_delegates_id_seq1; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"public"."delegation_delegates_id_seq1"', 13, true);
+SELECT pg_catalog.setval('"public"."delegation_delegates_id_seq1"', 31, true);
 
 
 --
@@ -329,7 +337,7 @@ SELECT pg_catalog.setval('"public"."delegations_id_seq"', 26, true);
 -- Name: observers_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('"public"."observers_id_seq"', 5, true);
+SELECT pg_catalog.setval('"public"."observers_id_seq"', 7, true);
 
 
 --
