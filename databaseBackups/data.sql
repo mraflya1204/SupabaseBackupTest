@@ -144,14 +144,6 @@ COPY "auth"."sso_domains" ("id", "sso_provider_id", "domain", "created_at", "upd
 --
 
 COPY "public"."delegates" ("id", "created_at", "name", "school", "email", "phone", "nationality", "dob", "type", "accommodation", "mun_experiences", "referral_code", "council1", "council1_country", "council2", "council2_country", "council3", "council3_country", "payment_proof_url", "social_media_proof_url", "id_proof_url", "double_delegate_name") FROM stdin;
-1	2025-07-17 05:41:46.990704+00	testes	tes	tes@gmail.com	+62 12345678222	tes	2025-07-09	International	yes	asdasd	sdasd	asdasd	asdasd	asdas	asdasd	asdasd	asdasd	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/payment-proofs/payment-proofs/1752731019207-mun-club-01-768x361.jpg	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/social-media-proofs/social-media-proofs/1752731019207-mun-club-01-768x361.jpg	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/id-proofs/id-proofs/1752731019207-mun-club-01-768x361.jpg	\N
-3	2025-07-22 16:13:25.229369+00	ads	sekolah	waduh@gmail.com	+62 12345678222	tes	2025-07-08	Local	yes	asdasd	adasd	ads	asd	sad	asdasd	asdasd	asds	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/payment-proofs/payment-proofs/1753200803459-mun-club-01-768x361.jpg	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/social-media-proofs/social-media-proofs/1753200803459-mun-club-01-768x361.jpg	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/id-proofs/id-proofs/1753200803459-mun-club-01-768x361.jpg	\N
-4	2025-07-22 19:32:46.588695+00	tyutyuty	adstyutyu	utyutyuty@gmail.com	+62 12345678222	ytityiity	2025-07-17	Local	yes	tyityityiyti	yuyuo	tyityi	tyityi	tyity	tyityi	ytityi	tyityi	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/payment-proofs/payment-proofs/1753212878709-mun-club-01-768x361.jpg	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/social-media-proofs/social-media-proofs/1753212878709-mun-club-01-768x361.jpg	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/id-proofs/id-proofs/1753212878709-mun-club-01-768x361.jpg	\N
-5	2025-07-24 00:25:27.968055+00	adgdg	adgadg	dgdgsag@gmail.com	+62 12345678	qweqwe	2025-07-11	Local	yes	asdasd	dghdgh	dfhdfh	dfhdf	dfhdfh	dhfdfh	dfhdfh	dfhdfh	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/payment-proofs/payment-proofs/1753316841990-mun-club-01-768x361.jpg	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/social-media-proofs/social-media-proofs/1753316841990-mun-club-01-768x361.jpg	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/id-proofs/id-proofs/1753316841990-mun-club-01-768x361.jpg	dfhdfh
-6	2025-07-31 15:15:27.882912+00	aasdasd	asdasd	wow@gmail.com	+62 12345678222	asdasd	2025-07-11	Local	yes	asdasd	\N	asdasd	asdasd	asd	asd	asd	asd	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/payment-proofs/payment-proofs/1753974925929-simon.jpg	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/social-media-proofs/social-media-proofs/1753974925929-simon.jpg	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/id-proofs/id-proofs/1753974925929-simon.jpg	asdasd
-7	2025-08-05 06:33:57.223258+00	aadg	adgadg	asf@gmail.com	+62 136136136	dg	2025-08-13	Local	yes	hdh	bnbn,	UNEP	dah	UNESCO	adgad	UN Tourism	adgadg	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/payment-proofs/payment-proofs/1754375753559-simon.jpg	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/social-media-proofs/social-media-proofs/1754375753560-simon.jpg	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/id-proofs/id-proofs/1754375753560-simon.jpg	adgadg
-8	2025-08-05 06:41:06.044842+00	Samantha Lee	NUS Singapore	sam.lee@nus.edu.sg	+6581234567	Singaporean	2001-11-20	International	yes	NUS MUN 2023, THIMUN 2022	SAM123	WHO	Singapore	WTO	Germany	UNDP	Japan	https://proofs.com/sam_payment.png	https://proofs.com/sam_social.png	https://proofs.com/sam_id.png	Samantha-Lee
-9	2025-08-05 06:41:06.044842+00	Rio Aditya	Universitas Indonesia	rio.a@ui.ac.id	+628123456700	Indonesian	2002-06-08	Local	no	Indonesia MUN 2023	RIO321	UNESCO	Indonesia	UN Tourism	Vietnam	UNSC	Philippines	https://proofs.com/rio_payment.png	https://proofs.com/rio_social.png	https://proofs.com/rio_id.png	Rio-Aditya
 \.
 
 
@@ -160,10 +152,6 @@ COPY "public"."delegates" ("id", "created_at", "name", "school", "email", "phone
 --
 
 COPY "public"."delegations" ("id", "created_at", "delegation_name", "school", "payment_proof_url", "referal_code", "accommodation", "type") FROM stdin;
-23	2025-07-22 10:12:34.973182+00	ITS new	ITS	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/payment-proofs/delegation-payment-proofs/1753179153278-1753162802005-payment.jpg	\N	\N	\N
-24	2025-07-22 10:20:31.218299+00	ITS Lain	ITS	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/payment-proofs/delegation-payment-proofs/1753179628766-1753162802005-payment.jpg	\N	\N	\N
-25	2025-07-24 01:27:55.288823+00	adgadg	adgadg	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/payment-proofs/delegation-payment-proofs/1753320589709-mun-club-01-768x361.jpg	\N	\N	\N
-26	2025-07-24 13:02:45.298614+00	delegasi keren	sekolah keren	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/payment-proofs/delegation-payment-proofs/1753362280447-simon.jpg	\N	yes	Local
 \.
 
 
@@ -172,19 +160,6 @@ COPY "public"."delegations" ("id", "created_at", "delegation_name", "school", "p
 --
 
 COPY "public"."delegation_delegates" ("id", "delegation_id", "created_at", "delegate_order", "name", "nationality", "dob", "mun_experiences", "id_proof_url", "council1", "council1_country", "council2", "council2_country", "council3", "council3_country", "double_delegate_name", "delegation_name", "email", "phone", "social_media_proof_url") FROM stdin;
-1	23	2025-07-22 13:16:49.247915+00	1	John Doe	Indonesia	1900-01-01		PLEASE_UPDATE_URL							\N	\N	\N	\N	\N
-2	23	2025-07-22 13:16:49.247915+00	2	Luci	Indonesia	1900-01-01		PLEASE_UPDATE_URL						\N	\N	\N	\N	\N	\N
-3	24	2025-07-22 13:16:49.247915+00	1	John Doe Lain	Indonesia	1900-01-01	1	PLEASE_UPDATE_URL	1	1	1	1	1	1	\N	\N	\N	\N	\N
-4	24	2025-07-22 13:16:49.247915+00	2	Luci Lain	Indonesia	1900-01-01	2	PLEASE_UPDATE_URL	2	2	2	2	2	\N	\N	\N	\N	\N	\N
-5	25	2025-07-24 01:27:55.792462+00	1	dhdfh	dfhdfh	2025-07-22	dhdhfd	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/id-proofs/delegation-id-proofs/1753320589703-1-Mask%20group.png	sfhsfh	sfhsfh	sfhsfh	sfhsfh	sfhsfh	sfhshf	\N	\N	\N	\N	\N
-6	25	2025-07-24 01:27:55.792462+00	2	dgjdgj	dgjdg	2025-07-17	dgjdgj	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/id-proofs/delegation-id-proofs/1753320589703-2-mun-club-01-768x361.jpg	dgjdgj	dgjdg	dgjdgj	dgjdgj	dgjdgj	dgjdgj	\N	\N	\N	\N	\N
-7	25	2025-07-24 01:27:55.792462+00	3	gjfgj	fgjfgj	2025-07-23	fgjfgj	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/id-proofs/delegation-id-proofs/1753320589703-3-mun-club-01-768x361.jpg	fgjfg	jfjgfgj	fgjfgj	fgjfgj	fgjfgj	fgjfgj	\N	\N	\N	\N	\N
-8	25	2025-07-24 01:27:55.792462+00	4	gfjfgj	fgjfgj	2025-07-25	fgjfgj	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/id-proofs/delegation-id-proofs/1753320589703-4-Mask%20group.png	fgjfgj	fgjfgj	fgjfgj	fgjfgj	fgjfg	fgjfgj	\N	\N	\N	\N	\N
-9	26	2025-07-24 13:02:45.916084+00	1	sfhsfh	dfhdfh	2025-07-18	adgadg	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/id-proofs/delegation-id-proofs/1753362280408-1-simon.jpg	adgadg	adgadg	adgadg	adgadg	adgadg	adgadg	\N	delegasi keren	sfhsf@gmail.com	+62 151351353124	\N
-10	26	2025-07-24 13:02:45.916084+00	2	dfjdgj	jdgjdjdgj	2025-07-24	djfdjdfj	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/id-proofs/delegation-id-proofs/1753362280408-2-simon.jpg	dfjdfj	dfjdfj	dfjdfj	dfjdfj	dfjdfj	jdfjfd	\N	delegasi keren	yuoy@hmail.com	+62 575079124124124	\N
-11	26	2025-07-24 13:02:45.916084+00	3	sshffh	adgadgg	2025-07-24	fjfsh	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/id-proofs/delegation-id-proofs/1753362280408-3-simon.jpg	sfhsfh	shffs	sfhshf	sfhfsh	sfhsfh	sfsfhfsh	\N	delegasi keren	sfhfshhf@mail.com	+62 113136163124124	\N
-12	26	2025-07-24 13:02:45.916084+00	4	sfhsfhs	shsfhfsh	2025-07-23	sfhsfh	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/id-proofs/delegation-id-proofs/1753362280408-4-simon.jpg	sfhshf	sfhshf	sfhshf	sfhfsh	sfhshf	sfhfsh	\N	delegasi keren	ryiyr@gmail.com	+62 942047124124124	\N
-13	26	2025-07-24 13:02:45.916084+00	5	sjdjdjg	adadadgadg	2025-07-24	adgadgadg	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/id-proofs/delegation-id-proofs/1753362280408-5-simon.jpg	adgagdadg	gadgaadg	adgadg	adgadg	adagadg	adgadg	\N	delegasi keren	dgjdf@gmail.com	+62 10396136124124	\N
 \.
 
 
@@ -193,12 +168,6 @@ COPY "public"."delegation_delegates" ("id", "delegation_id", "created_at", "dele
 --
 
 COPY "public"."observers" ("id", "created_at", "name", "nationality", "mun_experiences", "email", "phone", "payment_proof_url", "council1", "council2", "council3", "accommodation") FROM stdin;
-2	2025-07-15 12:02:20.651176+00	test user	2025-07-15	Conference_Council_Year_Award_Role	test@email.com	08123456789	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/payment-proofs/payment-proofs/1752580939899-payment.jpg	council_4	council_3	council_3	\N
-3	2025-07-22 19:34:23.219022+00	qweqwe	qweqwe	qqweqwe	qwqweqwe@gmail.com	+62 12345678222	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/payment-proofs/payment-proofs/1753212975906-mun-club-01-768x361.jpg	qweqwe	qewqwe	qweqwe	\N
-4	2025-07-22 20:16:37.447559+00	afasd	hfshsfh	sfhsfh	weh@gmail.com	+62 12345678222	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/payment-proofs/payment-proofs/1753215395491-mun-club-01-768x361.jpg	ssfhs	sfhsfh	sfhs	\N
-5	2025-08-04 08:53:44.597914+00	c	k	j	c@gmail.com	2	https://mjkvqobjuwoqamrtddia.supabase.co/storage/v1/object/public/payment-proofs/payment-proofs/1754297622888-css-3.png	h	d	f	yes
-6	2025-08-05 06:41:06.07382+00	John Tan	Malaysian	THIMUN 2023	john.tan@example.com	+60123456789	https://proofs.com/john_payment.png	WHO	WTO	UNDP	yes
-7	2025-08-05 06:41:06.07382+00	Putri Lestari	Indonesian	Indonesia MUN 2022	putri.lestari@gmail.com	+628112345678	https://proofs.com/putri_payment.png	UNESCO	UN Tourism	UNSC	no
 \.
 
 
